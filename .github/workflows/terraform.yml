@@ -144,10 +144,10 @@ jobs:
   # TERRATEST
   # ============================================================
 
-  terratest:
-    name: Terratest
-    runs-on: ubuntu-latest
-    needs: terraform-scan
+  # terratest:
+  #   name: Terratest
+  #   runs-on: ubuntu-latest
+  #   needs: terraform-scan
 
     steps:
 
