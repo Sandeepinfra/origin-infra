@@ -193,13 +193,13 @@ jobs:
   # PRODUCTION APPLY
   # ============================================================
 
-  apply:
-    name: Terraform Apply
-    runs-on: ubuntu-latest
+  # apply:
+  #   name: Terraform Apply
+  #   runs-on: ubuntu-latest
 
-    needs:
-      - terraform-scan
-      - terratest
+  #   needs:
+  #     - terraform-scan
+  #     - terratest
 
     # Apply ONLY from main branch
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
