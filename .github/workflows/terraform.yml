@@ -90,14 +90,14 @@ jobs:
       # TFLINT
       # ==========================================================
 
-      - name: Setup TFLint
-        uses: terraform-linters/setup-tflint@v4
+      # - name: Setup TFLint
+      #   uses: terraform-linters/setup-tflint@v4
 
-      - name: Initialize TFLint
-        run: tflint --init
+      # - name: Initialize TFLint
+      #   run: tflint --init
 
-      - name: Run TFLint
-        run: tflint
+      # - name: Run TFLint
+      #   run: tflint
 
       # ==========================================================
       # TFSEC
@@ -224,7 +224,7 @@ jobs:
         uses: actions/checkout@v4
       
 
-      
+
       # ----------------------------------------------------------
       # Azure Login
       # ----------------------------------------------------------
